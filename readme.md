@@ -25,4 +25,4 @@ Este repositorio contiene los ejercicios resueltos de una de las tareas asignada
    <!-- <script src="ejercicio3.js"></script> -->
    ```
 
-5. Para facilitar la ejecución en tu navegador, te recomendamos usar la extensión **Live Server** en VSCode. Esto permite que el archivo `index.html` se recargue automáticamente cada vez que guardes los cambios.
+5. Para facilitar la ejecución en tu navegador, se recomienda usar la extensión **Live Server** en VSCode. Esto permite que el archivo `index.html` se recargue automáticamente cada vez que guardes los cambios.

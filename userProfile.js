@@ -5,8 +5,10 @@ const preguntas = ["Ingresa tu nombre de usuario", "Ingresa tu edad", "Ingresa u
 
 for (let index = 0; index < preguntas.length; index++) {
    const pregunta = preguntas[index];
-   let r = prompt(pregunta);
-   confirm("¿es correcto " + r + '?');
+   let r;
+   do {
+      r = prompt(pregunta);
+   } while (!confirm("¿es correcto " + r + '?'));
    switch (index) {
       case 0:
          respuestas.nombreDeUsuario = r;   

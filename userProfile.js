@@ -1,7 +1,7 @@
 
 let respuestas = {}; 
 
-const preguntas = ["Ingresa tu nombre de usuario", "Ingresa tu edad", "Ingresa una lista de tus peliculas favoritas"];
+const preguntas = ["Ingresa tu nombre de usuario", "Ingresa tu edad", "Ingresa una lista de tus peliculas favoritas (separaras por comas)"];
 
 for (let index = 0; index < preguntas.length; index++) {
    const pregunta = preguntas[index];
@@ -17,7 +17,7 @@ for (let index = 0; index < preguntas.length; index++) {
          respuestas.edad = r;
          break;
       case 2:
-         respuestas.peliculasFavoritas = r.replaceAll(",", "").split(' ');
+         respuestas.peliculasFavoritas = r.split(',').map((cur) => cur.trim());
          break;
       default:
          break;

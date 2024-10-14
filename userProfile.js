@@ -17,7 +17,7 @@ for (let index = 0; index < preguntas.length; index++) {
          respuestas.edad = r;
          break;
       case 2:
-         respuestas.peliculasFavoritas = r.split(' ');
+         respuestas.peliculasFavoritas = r.replaceAll(",", "").split(' ');
          break;
       default:
          break;
